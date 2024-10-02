@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+font-family: "poppins";
+ padding: 0;
+ margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.nav1{
+display: flex;
+justify-content: space-between;
+background: linear-gradient(90deg,#b43cd2,#df832e);
+padding: 10px 80px;
+
+color: #fff;
+}
+.nav1 ul{
+    display: flex;
+    gap: 20px   ;
+
+}
+.nav1 ul li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.nav2
+{
+ display: flex;
+justify-content: space-between;
+padding: 10px 80px;
+color: #000;
+position: sticky;
+top:0;
+background-color: #e9e9e9;
+
+}
+.nav2 ul{
+    display: flex;
+    gap: 20px   ;
+    align-items: center;
+
+}
+.nav2 ul li{
+    list-style: none;
+}
+.nav2 ul li a{
+   text-decoration: none;
+   font-weight: 500;
+   transition: 0.3s;    
+}
+.nav2 ul button{
+  background: #b43cd2;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 30px;
+  transition: 0.3s;
+}
+.nav2 ul button:hover{
+    background-color: #df832e;
+    cursor: pointer;
+}
+
+.nav2 ul li a:hover{
+    color: #df832e;
+
+}
+.header{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.59) 0, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.59) 100%),url('./img/bg.jpg');
+    height: 100vh;
+    
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    padding: 0px 80px;
+}
+.header h1{
+    font-size: 78px;
+    width: 70%;
+}
+.header p{
+    width: 70%;
+}
+.header button{
+    margin-top: 10px;
+    width: 170px;
+    background: #df832e;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 30px;
+    transition: 0.3s;
+    font-weight: 500;
+    font-size: 16px;
+}
+.header button:hover{
+    background-color: #b43cd2;
+    cursor: pointer;
+}
+.about-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 80px;
+    height: 50vh;
+    justify-content: center;
+}
+.services-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    height: 100vh;
+}
+.services-section .services{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+.card{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    padding: 80px 50px;
+}
+.card img{
+    width: 70px;
+    align-self: center;
+}
+.card button{
+    margin-top: 10px;
+
+    background: #df832e;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 30px;
+    transition: 0.3s;
+    font-weight: 500;
+    font-size: 16px;
+    background: linear-gradient(90deg,#b43cd2,#df832e);
+}
+.card button:hover{
+    background: blanchedalmond;
+    color: #000;
+    cursor: pointer;
+}
+#contact{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.contact-container{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: ;
+}
+.contact-container .contact-details{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0px 150px;
+}
+.contact-details ul{
+    display: flex;
+    gap: 10px;
+}
+.contact-details ul li{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.contact-details .social-icons i{
+    font-size: 38px;
+}
+.contact-details .social-icons{
+    gap: 20px;
+}
+.contact-section{
+    padding: 0px 100px;
+}
+.contact-section .contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact-section .contact-form div{
+    display: flex;
+    flex-direction: column;
+}
+.contact-section .contact-form div input, textarea{
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 10px 20px;
+}
+.contact-section .contact-form button{
+    background: linear-gradient(90deg,#b43cd2,#df832e);
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+.footer{
+    display: flex;
+        justify-content: space-between;
+    padding: 30px 100px;
+
+    background-color: #eaeaea;
+}
+
